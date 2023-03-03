@@ -42,9 +42,9 @@ function App() {
       <div className="container my-3">
         <Switch>
           <Route exact path="/">
-            <TextForms showAlert={showAlert} heading="Enter the text to analyze " mode={mode} />
+            <TextForms showAlert={showAlert} heading="TextUtils - Word Counter, Character Counter, Remove extra spaces " mode={mode} />
           </Route>
-          <Route exact path="/about" component={About}/>
+          <Route exact path="/about"><About mode={mode} /> </Route>
         </Switch>
       </div>
     </BrowserRouter>
